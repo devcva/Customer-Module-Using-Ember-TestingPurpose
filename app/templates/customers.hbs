@@ -1,1 +1,31 @@
+<h1>Customer Module</h1>
+
+
+
+{{#if this.cuslist}}
+<h2 class="cuslist-head">Customer List</h2>
+
+<div class="cuslisttable">
+<table >
+    
+    {{#each this.model as |obj|}}
+    <tr onclick={{action "showSingleObj" obj}} >
+        <td>{{obj.name}}</td>
+        <td>{{obj.displayname}}</td>
+        <td>{{obj.phonenumber}}</td>
+    </tr>
+    {{else}}
+    <h5>Customer not available! Please Create Customer</h5>
+    {{/each}}
+
+</table>
+</div>
+
+
+{{#link-to 'customers.new'}}
+<button class="add-button">Add Customer</button>
+{{/link-to}}
+
+{{/if}}
+
 {{outlet}}

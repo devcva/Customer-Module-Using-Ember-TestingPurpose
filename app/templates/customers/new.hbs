@@ -1,1 +1,28 @@
+
+<h2 class="createnew-head">Create Customer</h2>
+<div class="add-cus">
+<form >
+
+<label for="name">Name</label>
+<Input @id="name"  @value={{this.model.name}} />
+<br>
+
+<label for="displayname">Display Name</label>
+<Input @id="displayname" @value={{this.model.displayname}} />
+<br>
+<label for="phonenumber">Phone Number</label>
+<Input @id="phonenumber" @type="number" @value={{this.model.phonenumber}} />
+<br>
+
+<button id="subbutton" {{action 'addCus' this.model.name this.model.displayname this.model.phonenumber this.model}}>Save</button>
+
+</form>
+
+
+</div>
 {{outlet}}
+
+
+
+<button {{action "readjson"}}>readjson</button>
+

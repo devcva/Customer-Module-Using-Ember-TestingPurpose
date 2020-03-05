@@ -1,0 +1,137 @@
+.add-cus
+{
+
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+    background-color: aliceblue;
+
+    box-sizing: content-box;
+}
+.createnew-head
+{
+    margin-left: 500px;
+}
+.load-page
+{
+    margin: 300px 0 0 600px;
+    width: 300px !important; 
+    height: 300px !important;
+    text-align: center;
+
+}
+.cuslist-head,.add-button
+{
+    margin-left: 500px;
+}
+.add-button
+{
+    margin-top: 100px;
+}
+label
+{
+    font-size: 25px;
+    margin-top: 10px;
+}
+input
+{
+    height: 26px;
+    width: 170px;
+    margin-top: 10px;
+}
+#name
+{
+    margin-left:100px;
+}
+#displayname
+{
+    margin-left: 16px;
+}
+#phonenumber
+{
+    margin-left: 10px;
+}
+#subbutton
+{
+    font-size: 26px;
+    height: 40px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 150px;
+    border-radius: 5px;
+}
+
+.show-single-cus
+{
+    border: 2px solid gray;
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
+
+.show-single-cus .cus-head
+{
+    padding: 13px;
+    background-color: lightgray;
+}
+
+.show-single-cus  span
+{
+    /* border: 3px solid green; */
+    padding: 20px;
+    margin: 10px;
+    display: block;
+    font-weight: bold;
+}
+
+.single-cus .cus-det span
+{
+    float: left;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.cuslisttable
+{
+    width: 500px;
+    margin: auto;
+}
+
+.cuslisttable table td
+{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.cuslisttable table
+{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+.cuslisttable tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+.cuslisttable tr:hover 
+{
+    background-color: #ddd;
+}
+
+.back-button
+{
+    width: 130px;
+    max-height: 50px;
+    font-size: 25px;
+    border-radius: 3px;
+    padding: 10px;
+}
+.add-button
+{
+    width: 150px;
+    max-height: 50px;
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 10px;
+}
