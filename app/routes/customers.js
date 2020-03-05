@@ -5,6 +5,6 @@ export default Route.extend({
     
     model()
     { 
-        return this.controllerFor('customers').read();
+        // return this.controllerFor('customers').read();
     },
 });

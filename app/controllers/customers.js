@@ -23,31 +23,31 @@ export default Controller.extend({
     myObj1:A([]),
 
      
-        read()
-        {
-            var myProm=new Promise((resolve,reject)=>{
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                 resolve(JSON.parse(this.responseText));
-            }
-            };
-            xmlhttp.open("GET", "sample.json", true);
-            xmlhttp.send();
+        // read()
+        // {
+        //     var myProm=new Promise((resolve,reject)=>{
+        //     var xmlhttp = new XMLHttpRequest();
+        //     xmlhttp.onreadystatechange = function() {
+        //     if (this.readyState == 4 && this.status == 200) {
+        //          resolve(JSON.parse(this.responseText));
+        //     }
+        //     };
+        //     xmlhttp.open("GET", "sample.json", true);
+        //     xmlhttp.send();
 
-            });
+        //     });
 
-            myProm.then(function(myobj)
-            {
-                console.log(myobj);
-                return myobj;
-            }).catch((err)=>{
-                console.log('Error: '+err);
-                return false;
-            });
+        //     myProm.then(function(myobj)
+        //     {
+        //         console.log(myobj);
+        //         return myobj;
+        //     }).catch((err)=>{
+        //         console.log('Error: '+err);
+        //         return false;
+        //     });
 
-            return myProm;
-        },
+        //     return myProm;
+        // },
  
 
     actions:
